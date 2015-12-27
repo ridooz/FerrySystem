@@ -57,6 +57,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\logo\ferry_icon.svg" />
+    <Content Include="img\logo\Ferry_logo.png" />
+    <Content Include="img\silder\scandlines_1.jpg" />
     <Content Include="plugins\backstretch\LICENSE-MIT" />
     <Content Include="plugins\backstretch\README.md" />
     <Content Include="plugins\bootbox\LICENSE.md" />

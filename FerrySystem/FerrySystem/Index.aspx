@@ -21,7 +21,7 @@ License: You must have a valid license purchased only from themeforest (the abov
 <!-- Head BEGIN -->
 <head>
     <meta charset="utf-8">
-    <title>Metronic One Page</title>
+    <title>BCFerries</title>
 
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -39,7 +39,7 @@ License: You must have a valid license purchased only from themeforest (the abov
     <!-- link to image for socio -->
     <meta property="og:url" content="-CUSTOMER VALUE-">
 
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="img/logo/ferry_icon.svg">
 
     <!-- Fonts START -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Pathway+Gothic+One|PT+Sans+Narrow:400+700|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
@@ -67,28 +67,6 @@ License: You must have a valid license purchased only from themeforest (the abov
 </head>
 <!--DOC: menu-always-on-top class to the body element to set menu on top -->
 <body>
-    <!-- BEGIN STYLE CUSTOMIZER DET ER HER TEMA KONFIGURATIONEN TIL HØJRE KOMMER FREM SÅ MAN KAN ÆNDRE TEMA FARVE
-  <div class="color-panel">
-    <div class="color-mode-icons icon-color"></div>
-    <div class="color-mode-icons icon-color-close"></div>
-    <div class="color-mode">
-      <p>THEME COLOR</p>
-      <ul class="inline">
-        <li class="color-red current color-default" data-style="red"></li>
-        <li class="color-red" data-style="red"></li>
-        <li class="color-green" data-style="green"></li>
-        <li class="color-orange" data-style="orange"></li>
-        <li class="color-gray" data-style="gray"></li>
-        <li class="color-turquoise" data-style="turquoise"></li>
-      </ul>      
-      <p>MENU POSITION</p>
-      <select class="form-control menu-pos">
-        <option value="bottom">Bottom</option>
-        <option value="top">Top</option>  
-      </select>
-    </div>
-  </div>
-  <!-- END BEGIN STYLE CUSTOMIZER -->
 
     <!-- Header BEGIN -->
     <div class="header header-mobi-ext">
@@ -237,186 +215,11 @@ License: You must have a valid license purchased only from themeforest (the abov
     <!-- Message block BEGIN -->
     <div class="message-block content content-center valign-center" id="message-block">
         <div class="valign-center-elem">
-            <h2>The details are not the details <strong>They make the design</strong></h2>
-            <em>KEEN THEMES</em>
+            <h2>Der er noget ved at sejle med<strong><b>BCFerries</b></strong></h2>
         </div>
     </div>
     <!-- Message block END -->
-
-    <!-- Team block BEGIN -->
-    <div class="team-block content content-center margin-bottom-40" id="team">
-        <div class="container">
-            <h2>Meet <strong>the team</strong></h2>
-            <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h4>
-
-            <div class="row">
-                <div class="col-md-4 item">
-                    <img src="img/people/img6-large.jpg" alt="Marcus Doe" class="img-responsive">
-                    <h3>Marcus Doe</h3>
-                    <em>Founder</em>
-                    <p>Lorem ipsum dolor amet, tempor ut labore magna tempor dolore</p>
-                    <div class="tb-socio">
-                        <a href="javascript:void(0);" class="fa fa-facebook"></a>
-                        <a href="javascript:void(0);" class="fa fa-twitter"></a>
-                        <a href="javascript:void(0);" class="fa fa-google-plus"></a>
-                    </div>
-                </div>
-                <div class="col-md-4 item">
-                    <img src="img/people/img7-large.jpg" alt="Elena Taylor" class="img-responsive">
-                    <h3>Elena Taylor</h3>
-                    <em>Designer</em>
-                    <p>Lorem ipsum dolor amet, tempor ut labore magna tempor dolore</p>
-                    <div class="tb-socio">
-                        <a href="javascript:void(0);" class="fa fa-facebook"></a>
-                        <a href="javascript:void(0);" class="fa fa-twitter"></a>
-                        <a href="javascript:void(0);" class="fa fa-google-plus"></a>
-                    </div>
-                </div>
-                <div class="col-md-4 item">
-                    <img src="img/people/img8-large.jpg" alt="Cris Nilson" class="img-responsive">
-                    <h3>Cris Nilson</h3>
-                    <em>Developer</em>
-                    <p>Lorem ipsum dolor amet, tempor ut labore magna tempor dolore</p>
-                    <div class="tb-socio">
-                        <a href="javascript:void(0);" class="fa fa-facebook"></a>
-                        <a href="javascript:void(0);" class="fa fa-twitter"></a>
-                        <a href="javascript:void(0);" class="fa fa-google-plus"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team block END -->
-
-    <!-- Portfolio block BEGIN -->
-    <div class="portfolio-block content content-center" id="portfolio">
-        <div class="container">
-            <h2 class="margin-bottom-50">Latest <strong>works</strong></h2>
-        </div>
-        <div class="row">
-            <div class="item col-md-2 col-sm-6 col-xs-12">
-                <img src="img/portfolio/2.jpg" alt="NAME" class="img-responsive">
-                <a href="img/portfolio/2.jpg" class="zoom valign-center">
-                    <div class="valign-center-elem">
-                        <strong>London City Project</strong>
-                        <em>Property</em>
-                        <b>Details</b>
-                    </div>
-                </a>
-            </div>
-            <div class="item col-md-2 col-sm-6 col-xs-12">
-                <img src="img/portfolio/6.jpg" alt="NAME" class="img-responsive">
-                <a href="img/portfolio/6.jpg" class="zoom valign-center">
-                    <div class="valign-center-elem">
-                        <strong>London City Project</strong>
-                        <em>Property</em>
-                        <b>Details</b>
-                    </div>
-                </a>
-            </div>
-            <div class="item col-md-2 col-sm-6 col-xs-12">
-                <img src="img/portfolio/8.jpg" alt="NAME" class="img-responsive">
-                <a href="img/portfolio/8.jpg" class="zoom valign-center">
-                    <div class="valign-center-elem">
-                        <strong>London City Project</strong>
-                        <em>Property</em>
-                        <b>Details</b>
-                    </div>
-                </a>
-            </div>
-            <div class="item col-md-2 col-sm-6 col-xs-12">
-                <img src="img/portfolio/3.jpg" alt="NAME" class="img-responsive">
-                <a href="img/portfolio/3.jpg" class="zoom valign-center">
-                    <div class="valign-center-elem">
-                        <strong>London City Project</strong>
-                        <em>Property</em>
-                        <b>Details</b>
-                    </div>
-                </a>
-            </div>
-            <div class="item col-md-2 col-sm-6 col-xs-12">
-                <img src="img/portfolio/5.jpg" alt="NAME" class="img-responsive">
-                <a href="img/portfolio/5.jpg" class="zoom valign-center">
-                    <div class="valign-center-elem">
-                        <strong>London City Project</strong>
-                        <em>Property</em>
-                        <b>Details</b>
-                    </div>
-                </a>
-            </div>
-            <div class="item col-md-2 col-sm-6 col-xs-12">
-                <img src="img/portfolio/4.jpg" alt="NAME" class="img-responsive">
-                <a href="img/portfolio/4.jpg" class="zoom valign-center">
-                    <div class="valign-center-elem">
-                        <strong>London City Project</strong>
-                        <em>Property</em>
-                        <b>Details</b>
-                    </div>
-                </a>
-            </div>
-            <div class="item col-md-2 col-sm-6 col-xs-12">
-                <img src="img/portfolio/1.jpg" alt="NAME" class="img-responsive">
-                <a href="img/portfolio/1.jpg" class="zoom valign-center">
-                    <div class="valign-center-elem">
-                        <strong>London City Project</strong>
-                        <em>Property</em>
-                        <b>Details</b>
-                    </div>
-                </a>
-            </div>
-            <div class="item col-md-2 col-sm-6 col-xs-12">
-                <img src="img/portfolio/10.jpg" alt="NAME" class="img-responsive">
-                <a href="img/portfolio/10.jpg" class="zoom valign-center">
-                    <div class="valign-center-elem">
-                        <strong>London City Project</strong>
-                        <em>Property</em>
-                        <b>Details</b>
-                    </div>
-                </a>
-            </div>
-            <div class="item col-md-2 col-sm-6 col-xs-12">
-                <img src="img/portfolio/9.jpg" alt="NAME" class="img-responsive">
-                <a href="img/portfolio/9.jpg" class="zoom valign-center">
-                    <div class="valign-center-elem">
-                        <strong>London City Project</strong>
-                        <em>Property</em>
-                        <b>Details</b>
-                    </div>
-                </a>
-            </div>
-            <div class="item col-md-2 col-sm-6 col-xs-12">
-                <img src="img/portfolio/7.jpg" alt="NAME" class="img-responsive">
-                <a href="img/portfolio/7.jpg" class="zoom valign-center">
-                    <div class="valign-center-elem">
-                        <strong>London City Project</strong>
-                        <em>Property</em>
-                        <b>Details</b>
-                    </div>
-                </a>
-            </div>
-            <div class="item col-md-2 col-sm-6 col-xs-12">
-                <img src="img/portfolio/2.jpg" alt="NAME" class="img-responsive">
-                <a href="img/portfolio/2.jpg" class="zoom valign-center">
-                    <div class="valign-center-elem">
-                        <strong>London City Project</strong>
-                        <em>Property</em>
-                        <b>Details</b>
-                    </div>
-                </a>
-            </div>
-            <div class="item col-md-2 col-sm-6 col-xs-12">
-                <img src="img/portfolio/8.jpg" alt="NAME" class="img-responsive">
-                <a href="img/portfolio/8.jpg" class="zoom valign-center">
-                    <div class="valign-center-elem">
-                        <strong>London City Project</strong>
-                        <em>Property</em>
-                        <b>Details</b>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio block END -->
+  
 
     <!-- Choose us block BEGIN -->
     <div class="choose-us-block content text-center margin-bottom-40" id="benefits">
@@ -712,33 +515,6 @@ License: You must have a valid license purchased only from themeforest (the abov
         </div>
     </div>
     <!-- Testimonials block END -->
-
-    <!-- Partners block BEGIN -->
-    <div class="partners-block">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2 col-sm-3 col-xs-6">
-                    <img src="img/partners/cisco.png" alt="cisco">
-                </div>
-                <div class="col-md-2 col-sm-3 col-xs-6">
-                    <img src="img/partners/walmart.png" alt="walmart">
-                </div>
-                <div class="col-md-2 col-sm-3 col-xs-6">
-                    <img src="img/partners/gamescast.png" alt="gamescast">
-                </div>
-                <div class="col-md-2 col-sm-3 col-xs-6">
-                    <img src="img/partners/spinwokrx.png" alt="spinwokrx">
-                </div>
-                <div class="col-md-2 col-sm-3 col-xs-6">
-                    <img src="img/partners/ngreen.png" alt="ngreen">
-                </div>
-                <div class="col-md-2 col-sm-3 col-xs-6">
-                    <img src="img/partners/vimeo.png" alt="vimeo">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Partners block END -->
 
     <!-- BEGIN PRE-FOOTER -->
     <div class="pre-footer" id="contact">
