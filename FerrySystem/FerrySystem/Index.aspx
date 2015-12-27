@@ -87,14 +87,12 @@ License: You must have a valid license purchased only from themeforest (the abov
                         <li class="current"><a href="#promo-block">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#team">Team</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#benefits">Benefits</a></li>
                         <li><a href="#prices">Pricing</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <li>
                             <form>
-                                <strong><a href="TestMaster.aspx" class="btn btn-circle blue" style="margin-top: -12px;">Login <i class="fa fa-sign-in"></i></a></strong>
+                                <strong><a href="TestMaster.aspx" class="btn btn-circle blue" style="margin-top: -12px;">Eksempel <i class="fa fa-sign-in"></i></a></strong>
                             </form>
                         </li>
 
@@ -130,19 +128,6 @@ License: You must have a valid license purchased only from themeforest (the abov
                                 <p>Hos BCFerries har vi mange forskellige tilbud til dig, der vil besøge Ø(1) eller Ø(2).<br>
                                     <a href="#prices"><span>FIND REJSE</span></a></p>
                             </div>
-                        </div>
-                        <div class="tp-caption large_bold_white fade"
-                            data-x="center"
-                            data-y="center"
-                            data-voffset="-110"
-                            data-speed="300"
-                            data-start="1700"
-                            data-easing="Power4.easeOut"
-                            data-endspeed="500"
-                            data-endeasing="Power1.easeIn"
-                            data-captionhidden="off"
-                            style="z-index: 6">
-                            <span>Sejl på minicruise til Ø(1) eller Ø(2)</span>
                         </div>
                     </li>
                 </ul>
@@ -318,55 +303,6 @@ License: You must have a valid license purchased only from themeforest (the abov
         </div>
     </div>
     <!-- Choose us block END -->
-
-    <!-- Checkout block BEGIN -->
-    <div class="checkout-block content">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10">
-                    <h2>CHECK OUT ADMIN THEME! <em>Most Full Featured &amp; Powerfull Admin Theme</em></h2>
-                </div>
-                <div class="col-md-2 text-right">
-                    <a href="http://www.keenthemes.com/preview/index.php?theme=metronic_admin&amp;page=index.html" target="_blank" class="btn btn-primary">Live preview</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Checkout block END -->
-
-    <!-- Facts block BEGIN -->
-    <div class="facts-block content content-center" id="facts-block">
-        <h2>Some facts about us</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-3 col-xs-6">
-                    <div class="item">
-                        <strong>39</strong>
-                        Projects Completed
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-3 col-xs-6">
-                    <div class="item">
-                        <strong>14</strong>
-                        Team Members
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-3 col-xs-6">
-                    <div class="item">
-                        <strong>29k+</strong>
-                        Products Sold
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-3 col-xs-6">
-                    <div class="item">
-                        <strong>500</strong>
-                        Weekly Sales
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Facts block END -->
 
     <!-- Prices block BEGIN -->
     <div class="prices-block content content-center" id="prices">
@@ -571,7 +507,7 @@ License: You must have a valid license purchased only from themeforest (the abov
             <div class="row">
                 <!-- BEGIN COPYRIGHT -->
                 <div class="col-md-6 col-sm-6">
-                    <div class="copyright">2014 © Metronic One Page. ALL Rights Reserved.</div>
+                    <div class="copyright">2015 © BCFerries - CustomerFrontEnd</div>
                 </div>
                 <!-- END COPYRIGHT -->
                 <!-- BEGIN SOCIAL ICONS -->
