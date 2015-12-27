@@ -1,0 +1,6 @@
+C:\Users\Mykremin\Dropbox\CBA - Datamatiker\PBA - Software Development\Large systems\Eksamensprodukt - Ferry case\FerrySystem\FerrySystem\bin\FerrySystem.dll.config
+C:\Users\Mykremin\Dropbox\CBA - Datamatiker\PBA - Software Development\Large systems\Eksamensprodukt - Ferry case\FerrySystem\FerrySystem\bin\FerrySystem.dll
+C:\Users\Mykremin\Dropbox\CBA - Datamatiker\PBA - Software Development\Large systems\Eksamensprodukt - Ferry case\FerrySystem\FerrySystem\bin\FerrySystem.pdb
+C:\Users\Mykremin\Dropbox\CBA - Datamatiker\PBA - Software Development\Large systems\Eksamensprodukt - Ferry case\FerrySystem\FerrySystem\obj\Debug\FerrySystem.dll
+C:\Users\Mykremin\Dropbox\CBA - Datamatiker\PBA - Software Development\Large systems\Eksamensprodukt - Ferry case\FerrySystem\FerrySystem\obj\Debug\FerrySystem.pdb
+C:\Users\Mykremin\Dropbox\CBA - Datamatiker\PBA - Software Development\Large systems\Eksamensprodukt - Ferry case\FerrySystem\FerrySystem\obj\Debug\FerrySystem.csprojResolveAssemblyReference.cache
