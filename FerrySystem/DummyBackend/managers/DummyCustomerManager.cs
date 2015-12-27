@@ -9,12 +9,18 @@ using DummyBackend.assembler;
 
 namespace DummyBackend.managers
 {
-    public class CustomerManager : CustomerContract
+    public class DummyCustomerManager : CustomerContract
     {
         Assembler db;
+        DummyCustomerManager manager = new DummyCustomerManager();
 
-        public CustomerManager(){
+        public DummyCustomerManager(){
             db = new Assembler();
+        }
+
+        public DummyCustomerManager getManager()
+        {
+            return manager;
         }
 
         public List<Trip> GetAllTrips()

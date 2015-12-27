@@ -7,7 +7,7 @@ using Contract.eto;
 
 namespace DummyBackend.assembler
 {
-    public class Assembler
+    public class Assembler 
     {
         public List<Customer> CustomerList { get; set; }
         public List<Ferry> FerryList { set; get; }

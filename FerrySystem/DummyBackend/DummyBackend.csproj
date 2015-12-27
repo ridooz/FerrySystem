@@ -69,8 +69,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="assembler\Assembler.cs" />
-    <Compile Include="managers\AdminstrationManager.cs" />
-    <Compile Include="managers\CustomerManager.cs" />
+    <Compile Include="managers\DummyAdminstrationManager.cs" />
+    <Compile Include="managers\DummyCustomerManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

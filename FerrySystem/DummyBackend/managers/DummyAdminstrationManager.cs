@@ -9,11 +9,11 @@ using DummyBackend.assembler;
 
 namespace DummyBackend.managers
 {
-    public class AdminstrationManager : AdminstrationContract
+    public class DummyAdminstrationManager : AdminstrationContract
     {
         Assembler db;
 
-        public AdminstrationManager()
+        public DummyAdminstrationManager()
         {
             db = new Assembler();
         }
