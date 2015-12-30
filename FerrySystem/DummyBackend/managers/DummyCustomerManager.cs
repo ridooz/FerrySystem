@@ -12,7 +12,6 @@ namespace DummyBackend.managers
     public class DummyCustomerManager : CustomerContract
     {
         Assembler db;
-        DummyCustomerManager manager = new DummyCustomerManager();
 
         public DummyCustomerManager(){
             db = new Assembler();
@@ -20,7 +19,7 @@ namespace DummyBackend.managers
 
         public DummyCustomerManager getManager()
         {
-            return manager;
+            return new DummyCustomerManager();
         }
 
         public List<Trip> GetAllTrips()
@@ -30,7 +29,7 @@ namespace DummyBackend.managers
 
         public List<Reservation> GetAllCustomerReservations(Customer customer)
         {
-            return db.ReservationList.Where(x => x.CustomerId == customer.CustomerId).ToList();
+            return db.ReservationList.Where(x => x.Customer.CustomerId == customer.CustomerId).ToList();
         }
 
         public bool CreateCustomer(Customer customer)
@@ -41,19 +40,31 @@ namespace DummyBackend.managers
 
         public Customer GetCustomerByLogin(string username, string password)
         {
-            throw new NotImplementedException();
+            List<Customer> customers = new List<Customer>(); 
+            customers = db.CustomerList;
+
+            var found = customers.Find(c => c.Mail == username && c.Password == password);
+            if (found != null)
+            {
+                return found;
+            }
+            else
+            {
+                throw new CustomerNotFoundException();
+            }
+                       
         }
 
         public Reservation CreateCustomerReservation(Trip trip, Customer customer, double totalPrice, int numberOfPeople, Vehicle vehicle)
         {
-            var reservation = new Reservation {ReservationId = (db.ReservationList.Count+1), CustomerId = customer.CustomerId, TripId = trip.TripId, VehicleId = vehicle.VehicleId, TotalPrice = totalPrice, NumberOfPeople = numberOfPeople };
+            var reservation = new Reservation {ReservationId = (db.ReservationList.Count+1),  Customer = customer, Trip = trip, Vehicle = vehicle, TotalPrice = totalPrice, NumberOfPeople = numberOfPeople };
             db.ReservationList.Add(reservation);
             return reservation;
         }
 
-        public bool CancelCustomerReservation(Reservation reservation)
+        public bool CancelCustomerReservation(int reservationId)
         {
-            return db.ReservationList.Remove(reservation);
+            return db.ReservationList.Remove(db.ReservationList.Where(r => r.ReservationId == reservationId).First());
         }
     }
 }

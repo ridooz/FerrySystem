@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CustomerPage.aspx" />
     <Content Include="img\logo\ferry_icon.svg" />
     <Content Include="img\logo\Ferry_logo.png" />
     <Content Include="img\silder\scandlines_1.jpg" />
@@ -3655,6 +3656,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BridgeFactory.cs" />
+    <Compile Include="CustomerPage.aspx.cs">
+      <DependentUpon>CustomerPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerPage.aspx.designer.cs">
+      <DependentUpon>CustomerPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

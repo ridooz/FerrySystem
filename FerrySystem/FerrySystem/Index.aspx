@@ -92,7 +92,7 @@ License: You must have a valid license purchased only from themeforest (the abov
                         <li><a href="#contact">Contact</a></li>
                         <li>
                             <form>
-                                <strong><a href="TestMaster.aspx" class="btn btn-circle blue" style="margin-top: -12px;">Eksempel <i class="fa fa-sign-in"></i></a></strong>
+                                <strong><a href="#Login" class="btn btn-circle blue" style="margin-top: -12px;">Login <i class="fa fa-sign-in"></i></a></strong>
                             </form>
                         </li>
 
@@ -410,96 +410,36 @@ License: You must have a valid license purchased only from themeforest (the abov
     </div>
     <!-- Prices block END -->
 
-    <!-- Testimonials block BEGIN -->
-    <div class="testimonials-block content content-center margin-bottom-65">
+    <!-- LOGIN block BEGIN -->
+    <div class="testimonials-block content content-center margin-bottom-65" id="Login">
         <div class="container">
-            <h2>Customer <strong>testimonials</strong></h2>
-            <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h4>
+            <h2>Customer <strong>login</strong></h2>
 
-            <div class="carousel slide" data-ride="carousel" id="testimonials-block">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <!-- Carousel items -->
-                    <div class="active item">
-                        <blockquote>
-                            <p>This is the most awesome, full featured, easy, costomizeble theme. It’s extremely responsive and very helpful to all suggestions.</p>
-                        </blockquote>
-                        <span class="testimonials-name">Mark Doe</span>
-                    </div>
-                    <!-- Carousel items -->
-                    <div class="item">
-                        <blockquote>
-                            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse.</p>
-                        </blockquote>
-                        <span class="testimonials-name">Joe Smith</span>
-                    </div>
-                    <!-- Carousel items -->
-                    <div class="item">
-                        <blockquote>
-                            <p>Williamsburg carles vegan helvetica. Cosby sweater eu banh mi, qui irure terry richardson ex squid Aliquip placeat salvia cillum iphone.</p>
-                        </blockquote>
-                        <span class="testimonials-name">Linda Adams</span>
-                    </div>
-                </div>
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#testimonials-block" data-slide-to="0" class="active"></li>
-                    <li data-target="#testimonials-block" data-slide-to="1"></li>
-                    <li data-target="#testimonials-block" data-slide-to="2"></li>
-                </ol>
-            </div>
+        <form class="login-form" action="Index.aspx" method="post">
+        <div class="form-group">
+            <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+            <label class="control-label visible-ie8 visible-ie9">Brugernavn</label>
+			<div class="input-icon">
+				<i class="fa fa-user"></i>
+				<input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Brugernavn" name="username"/>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label visible-ie8 visible-ie9">Adgangskode</label>
+			<div class="input-icon">
+				<i class="fa fa-lock"></i>
+				<input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="Adgangskode" name="password"/>
+			</div>
+		</div>
+		<div class="form-actions">
+			<button id="submitButton" type="submit" class="btn blue pull-right" runat="server">
+			Login <i class="fa fa-arrow-circle-o-right"></i>
+			</button>
+		</div>
+	</form>
         </div>
     </div>
-    <!-- Testimonials block END -->
-
-    <!-- BEGIN PRE-FOOTER -->
-    <div class="pre-footer" id="contact">
-        <div class="container">
-            <div class="row">
-                <!-- BEGIN BOTTOM ABOUT BLOCK -->
-                <div class="col-md-4 col-sm-6 pre-footer-col">
-                    <h2>About us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam sit nonummy nibh euismod tincidunt ut laoreet dolore magna aliquarm erat sit volutpat. Nostrud exerci tation ullamcorper suscipit lobortis nisl aliquip  commodo consequat. </p>
-                    <p>Duis autem vel eum iriure dolor vulputate velit esse molestie at dolore.</p>
-                </div>
-                <!-- END BOTTOM ABOUT BLOCK -->
-
-                <!-- BEGIN TWITTER BLOCK -->
-                <div class="col-md-4 col-sm-6 pre-footer-col">
-                    <h2 class="margin-bottom-0">Latest Tweets</h2>
-                    <a class="twitter-timeline" href="https://twitter.com/twitterapi" data-tweet-limit="2" data-theme="dark" data-link-color="#57C8EB" data-widget-id="455411516829736961" data-chrome="noheader nofooter noscrollbar noborders transparent">Loading tweets by @keenthemes...</a>
-                </div>
-                <!-- END TWITTER BLOCK -->
-
-                <div class="col-md-4 col-sm-6 pre-footer-col">
-                    <!-- BEGIN BOTTOM CONTACTS -->
-                    <h2>Our Contacts</h2>
-                    <address class="margin-bottom-20">
-                        35, Lorem Lis Street, Park Ave<br>
-                        California, US<br>
-                        Phone: 300 323 3456<br>
-                        Fax: 300 323 1456<br>
-                        Email: <a href="mailto:info@metronic.com">info@metronic.com</a><br>
-                        Skype: <a href="skype:metronic">metronic</a>
-                    </address>
-                    <!-- END BOTTOM CONTACTS -->
-
-                    <div class="pre-footer-subscribe-box">
-                        <h2>Newsletter</h2>
-                        <form action="javascript:void(0);">
-                            <div class="input-group">
-                                <input type="text" placeholder="youremail@mail.com" class="form-control">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-primary" type="submit">Subscribe</button>
-                                </span>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END PRE-FOOTER -->
+    <!-- LOGIN block END -->
 
     <!-- BEGIN FOOTER -->
     <div class="footer">
@@ -510,20 +450,6 @@ License: You must have a valid license purchased only from themeforest (the abov
                     <div class="copyright">2015 © BCFerries - CustomerFrontEnd</div>
                 </div>
                 <!-- END COPYRIGHT -->
-                <!-- BEGIN SOCIAL ICONS -->
-                <div class="col-md-6 col-sm-6 pull-right">
-                    <ul class="social-icons">
-                        <li><a class="rss" data-original-title="rss" href="javascript:void(0);"></a></li>
-                        <li><a class="facebook" data-original-title="facebook" href="javascript:void(0);"></a></li>
-                        <li><a class="twitter" data-original-title="twitter" href="javascript:void(0);"></a></li>
-                        <li><a class="googleplus" data-original-title="googleplus" href="javascript:void(0);"></a></li>
-                        <li><a class="linkedin" data-original-title="linkedin" href="javascript:void(0);"></a></li>
-                        <li><a class="youtube" data-original-title="youtube" href="javascript:void(0);"></a></li>
-                        <li><a class="vimeo" data-original-title="vimeo" href="javascript:void(0);"></a></li>
-                        <li><a class="skype" data-original-title="skype" href="javascript:void(0);"></a></li>
-                    </ul>
-                </div>
-                <!-- END SOCIAL ICONS -->
             </div>
         </div>
     </div>

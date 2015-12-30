@@ -31,22 +31,20 @@ namespace DummyBackend.assembler
         private List<Customer> AssembleCustomers()
         {
             var customers = new List<Customer>();
-            customers.Add(new Customer { CustomerId = 1, Firstname = "Ahmed", Lastname = "Sadiq", Mail = "mail@mail.dk", Phone = "12345678", Street = "Boulevardgaden" , HouseNumber = "48A", PostalCode = 2635, City = "Ishøj" });
-            customers.Add(new Customer { CustomerId = 2, Firstname = "Ahmed", Lastname = "Sadiq", Mail = "mail@mail.dk", Phone = "12345678", Street = "Boulevardgaden" , HouseNumber = "48A", PostalCode = 2635, City = "Ishøj" });
-            customers.Add(new Customer { CustomerId = 3, Firstname = "Ahmed", Lastname = "Sadiq", Mail = "mail@mail.dk", Phone = "12345678", Street = "Boulevardgaden" , HouseNumber = "48A", PostalCode = 2635, City = "Ishøj" });
-            customers.Add(new Customer { CustomerId = 4, Firstname = "Ahmed", Lastname = "Sadiq", Mail = "mail@mail.dk", Phone = "12345678", Street = "Boulevardgaden" , HouseNumber = "48A", PostalCode = 2635, City = "Ishøj" });
-            customers.Add(new Customer { CustomerId = 5, Firstname = "Ahmed", Lastname = "Sadiq", Mail = "mail@mail.dk", Phone = "12345678", Street = "Boulevardgaden" , HouseNumber = "48A", PostalCode = 2635, City = "Ishøj" });
+            customers.Add(new Customer { CustomerId = 1, Firstname = "Ahmed", Lastname = "Sadiq", Mail = "test@test.dk", Password = "test", Phone = "12345678", Street = "Boulevardgaden" , HouseNumber = "48A", PostalCode = 2635, City = "Ishøj" });
+            customers.Add(new Customer { CustomerId = 2, Firstname = "Mikail", Lastname = "Tolga", Mail = "mikail@test.dk", Password = "test", Phone = "12345678", Street = "Boulevardgaden", HouseNumber = "48A", PostalCode = 2635, City = "Ishøj" });
+            customers.Add(new Customer { CustomerId = 3, Firstname = "Ridvan", Lastname = "Gurel", Mail = "ridvan@test.dk", Password = "test", Phone = "12345678", Street = "Boulevardgaden", HouseNumber = "48A", PostalCode = 2635, City = "Ishøj" });
             return customers;
         }
 
         private List<Ferry> AssembleFerries()
         {
             var ferries = new List<Ferry>();
-            ferries.Add(new Ferry { FerryId = 1, DockId = null, Municipality = "Ishøj Kommune", FerryName = "Isabella", PassengerCapacity = 200,VehicleCapacity = 250, FerrySize = "Large"});
-            ferries.Add(new Ferry { FerryId = 2, DockId = null, Municipality = "Ishøj Kommune", FerryName = "Monica", PassengerCapacity = 200, VehicleCapacity = 25, FerrySize = "Large" });
-            ferries.Add(new Ferry { FerryId = 3, DockId = null, Municipality = "Ishøj Kommune", FerryName = "America", PassengerCapacity = 200, VehicleCapacity = 19, FerrySize = "Large"});
-            ferries.Add(new Ferry { FerryId = 4, DockId = null, Municipality = "Ishøj Kommune", FerryName = "Mærsk VI", PassengerCapacity = 200, VehicleCapacity = 0, FerrySize = "Large"});
-            ferries.Add(new Ferry { FerryId = 5, DockId = null, Municipality = "Ishøj Kommune", FerryName = "Turan", PassengerCapacity = 200, VehicleCapacity = 5000, FerrySize = "Large"});
+            ferries.Add(new Ferry { FerryId = 1, Dock = null, Municipality = "Ishøj Kommune", FerryName = "Isabella", PassengerCapacity = 200,VehicleCapacity = 250, FerrySize = "Large"});
+            ferries.Add(new Ferry { FerryId = 2, Dock = null, Municipality = "Ishøj Kommune", FerryName = "Monica", PassengerCapacity = 200, VehicleCapacity = 25, FerrySize = "Large" });
+            ferries.Add(new Ferry { FerryId = 3, Dock = null, Municipality = "Ishøj Kommune", FerryName = "America", PassengerCapacity = 200, VehicleCapacity = 19, FerrySize = "Large"});
+            ferries.Add(new Ferry { FerryId = 4, Dock = null, Municipality = "Ishøj Kommune", FerryName = "Mærsk VI", PassengerCapacity = 200, VehicleCapacity = 0, FerrySize = "Large"});
+            ferries.Add(new Ferry { FerryId = 5, Dock = null, Municipality = "Ishøj Kommune", FerryName = "Turan", PassengerCapacity = 200, VehicleCapacity = 5000, FerrySize = "Large"});
             return ferries;
         }
 
@@ -74,12 +72,31 @@ namespace DummyBackend.assembler
 
         private List<Reservation> AssembleReservations()
         {
+
+            Customer customer1 = new Customer { CustomerId = 1, Firstname = "Ahmed", Lastname = "Sadiq", Mail = "test@test.dk", Password = "test", Phone = "12345678", Street = "Boulevardgaden", HouseNumber = "48A", PostalCode = 2635, City = "Ishøj" };
+            Customer customer2 = new Customer{CustomerId = 2, Firstname = "Mikail", Lastname = "Tolga", Mail = "mikail@test.dk", Password = "test", Phone = "12345678", Street = "Boulevardgaden", HouseNumber = "48A", PostalCode = 2635, City = "Ishøj" };
+            Customer customer3 = new Customer{CustomerId = 3, Firstname = "Ridvan", Lastname = "Gurel", Mail = "ridvan@test.dk", Password = "test", Phone = "12345678", Street = "Boulevardgaden", HouseNumber = "48A", PostalCode = 2635, City = "Ishøj" };
+
+            Route route1 = new Route { RouteId = 1, Depature = "Lyngby", Duration = 90, Destination = "Ishøj" };
+            Route route2 = new Route { RouteId = 2, Depature = "Ishøj", Duration = 90, Destination = "Lyngby" };
+            Route route3 = new Route { RouteId = 3, Depature = "Langbortistan", Duration = 90, Destination = "Malmø" };
+
+            Ferry ferry1 = new Ferry { FerryId = 1, Dock = null, Municipality = "Ishøj Kommune", FerryName = "Isabella", PassengerCapacity = 200, VehicleCapacity = 250, FerrySize = "Large" };
+            Ferry ferry2 = new Ferry { FerryId = 2, Dock = null, Municipality = "Ishøj Kommune", FerryName = "Monica", PassengerCapacity = 200, VehicleCapacity = 25, FerrySize = "Large" };
+            Ferry ferry3 = new Ferry { FerryId = 3, Dock = null, Municipality = "Ishøj Kommune", FerryName = "America", PassengerCapacity = 200, VehicleCapacity = 19, FerrySize = "Large" };
+
+            Trip trip1 = new Trip { TripId = 1, DepatureTime = new DateTime(2015, 04, 12, 21, 45, 00), Route =route1 , Ferry = ferry1, TripPrice = 100 };
+            Trip trip2 = new Trip { TripId = 2, DepatureTime = new DateTime(2015, 11, 12, 12, 55, 00), Route = route2, Ferry = ferry2, TripPrice = 120 };
+            Trip trip3 = new Trip { TripId = 3, DepatureTime = new DateTime(2015, 07, 12, 14, 30, 00), Route = route3, Ferry = ferry3, TripPrice = 100 };
+
+            Vehicle vehicle1 = new Vehicle { VehicleId = 1, VehicleSize = 1, VehicleType = "Personbil", VehiclePrice = 200.85 };
+            Vehicle vehicle2 = new Vehicle { VehicleId = 2, VehicleSize = 2, VehicleType = "Varevogn/Mindre lastbil", VehiclePrice = 253.1 };
+            Vehicle vehicle3 = new Vehicle { VehicleId = 3, VehicleSize = 3, VehicleType = "Lastbil", VehiclePrice = 1025.5 };
+            
             var reservations = new List<Reservation>();
-            reservations.Add(new Reservation { ReservationId = 1, CustomerId = 1, NumberOfPeople = 1, TotalPrice = 500, TripId = 1, VehicleId = 1 });
-            reservations.Add(new Reservation { ReservationId = 2, CustomerId = 2, NumberOfPeople = 2, TotalPrice = 500, TripId = 2, VehicleId = 2 });
-            reservations.Add(new Reservation { ReservationId = 3, CustomerId = 3, NumberOfPeople = 3, TotalPrice = 500, TripId = 3, VehicleId = 3 });
-            reservations.Add(new Reservation { ReservationId = 4, CustomerId = 4, NumberOfPeople = 4, TotalPrice = 500, TripId = 4, VehicleId = 4 });
-            reservations.Add(new Reservation { ReservationId = 5, CustomerId = 5, NumberOfPeople = 5, TotalPrice = 500, TripId = 5, VehicleId = 5 });
+            reservations.Add(new Reservation { ReservationId = 1, Customer = customer1, NumberOfPeople = 1, TotalPrice = 500, Trip = trip1, Vehicle = vehicle1 });
+            reservations.Add(new Reservation { ReservationId = 2, Customer = customer2, NumberOfPeople = 2, TotalPrice = 500, Trip = trip2, Vehicle = vehicle2 });
+            reservations.Add(new Reservation { ReservationId = 3, Customer = customer3, NumberOfPeople = 3, TotalPrice = 500, Trip = trip3, Vehicle = vehicle3 });
             return reservations;
         }
 
@@ -96,12 +113,18 @@ namespace DummyBackend.assembler
 
         private List<Trip> AssembleTrips()
         {
+            Route route1 = new Route { RouteId = 1, Depature = "Lyngby", Duration = 90, Destination = "Ishøj" };
+            Route route2 = new Route { RouteId = 2, Depature = "Ishøj", Duration = 90, Destination = "Lyngby" };
+            Route route3 = new Route { RouteId = 3, Depature = "Langbortistan", Duration = 90, Destination = "Malmø" };
+
+            Ferry ferry1 = new Ferry { FerryId = 1, Dock = null, Municipality = "Ishøj Kommune", FerryName = "Isabella", PassengerCapacity = 200, VehicleCapacity = 250, FerrySize = "Large" };
+            Ferry ferry2 = new Ferry { FerryId = 2, Dock = null, Municipality = "Ishøj Kommune", FerryName = "Monica", PassengerCapacity = 200, VehicleCapacity = 25, FerrySize = "Large" };
+            Ferry ferry3 = new Ferry { FerryId = 3, Dock = null, Municipality = "Ishøj Kommune", FerryName = "America", PassengerCapacity = 200, VehicleCapacity = 19, FerrySize = "Large" };
+
             var trips = new List<Trip>();
-            trips.Add(new Trip { TripId = 1, DepatureTime = new DateTime(2015, 04, 12, 21, 45, 00), RouteId = 1, FerryId = 1, TripPrice = 100 });
-            trips.Add(new Trip { TripId = 2, DepatureTime = new DateTime(2015, 11, 12, 12, 55, 00), RouteId = 2, FerryId = 2, TripPrice = 120 });
-            trips.Add(new Trip { TripId = 3, DepatureTime = new DateTime(2015, 07, 12, 14, 30, 00), RouteId = 3, FerryId = 3, TripPrice = 100 });
-            trips.Add(new Trip { TripId = 4, DepatureTime = new DateTime(2015, 12, 12, 02, 10, 00), RouteId = 4, FerryId = 4, TripPrice = 150 });
-            trips.Add(new Trip { TripId = 5, DepatureTime = new DateTime(2015, 01, 12, 10, 18, 00), RouteId = 5, FerryId = 5, TripPrice = 119 });
+            trips.Add(new Trip { TripId = 1, DepatureTime = new DateTime(2015, 04, 12, 21, 45, 00), Route = route1, Ferry = ferry1, TripPrice = 100 });
+            trips.Add(new Trip { TripId = 2, DepatureTime = new DateTime(2015, 11, 12, 12, 55, 00), Route = route2, Ferry = ferry2, TripPrice = 120 });
+            trips.Add(new Trip { TripId = 3, DepatureTime = new DateTime(2015, 07, 12, 14, 30, 00), Route = route3, Ferry = ferry3, TripPrice = 100 });
             return trips;
         }
 
