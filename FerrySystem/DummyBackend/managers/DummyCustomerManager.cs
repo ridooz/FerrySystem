@@ -66,5 +66,14 @@ namespace DummyBackend.managers
         {
             return db.ReservationList.Remove(db.ReservationList.Where(r => r.ReservationId == reservationId).First());
         }
+
+        public List<Route> GetAllRoutes()
+        {
+            return db.RouteList;
+        }
+        public List<Vehicle> GetAllVehicles()
+        {
+            return db.VehicleList;
+        }
     }
 }

@@ -68,6 +68,32 @@ License: You must have a valid license purchased only from themeforest (the abov
 <!--DOC: menu-always-on-top class to the body element to set menu on top -->
 <body>
 
+    <%if (Request.QueryString["command"] != null)
+      {
+          if (Request.QueryString["command"] == "exception")
+          {
+    %>
+
+
+    <!-- Exception block BEGIN -->
+    <div class="error-block content content-center" id="error">
+        <div class="container">
+            <h2><strong style="color: red">Fejl</strong></h2>
+            <h4><%=Request.QueryString["errorMsg"].ToString()%></h4>
+            <br />
+            <br />
+            <form action="Index.aspx">
+                <button type="submit" class="btn btn-default green">Tilbage til Start <i class="m-icon-swapright m-icon-white"></i></button>
+            </form>
+
+        </div>
+    </div>
+    <!-- Exception block END -->
+
+
+    <% } 
+          } else { %>
+
     <!-- Header BEGIN -->
     <div class="header header-mobi-ext">
         <div class="container">
@@ -85,7 +111,7 @@ License: You must have a valid license purchased only from themeforest (the abov
                 <div class="col-md-10 pull-right">
                     <ul class="header-navigation">
                         <li class="current"><a href="#promo-block">Home</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#about">Søg rejse</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#benefits">Benefits</a></li>
                         <li><a href="#prices">Pricing</a></li>
@@ -125,8 +151,10 @@ License: You must have a valid license purchased only from themeforest (the abov
                             <div class="promo-like"><i class="fa fa-thumbs-up"></i></div>
                             <div class="promo-like-text">
                                 <h2>Book din billet online - hurtigt og nemt</h2>
-                                <p>Hos BCFerries har vi mange forskellige tilbud til dig, der vil besøge Ø(1) eller Ø(2).<br>
-                                    <a href="#prices"><span>FIND REJSE</span></a></p>
+                                <p>
+                                    Hos BCFerries har vi mange forskellige tilbud til dig, der vil besøge Ø(1) eller Ø(2).<br>
+                                    <a href="#prices"><span>FIND REJSE</span></a>
+                                </p>
                             </div>
                         </div>
                     </li>
@@ -139,24 +167,34 @@ License: You must have a valid license purchased only from themeforest (the abov
     <!-- About block BEGIN -->
     <div class="about-block content content-center" id="about">
         <div class="container">
-            <h2><strong>Metronic</strong> Inspires</h2>
-            <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h4>
+            <h2><strong>Søg</strong> Rejse</h2>
+            <h4>Ønsker du at søge en rejse, skal du indtaste dato og tid for rejse</h4>
 
-            <div class="ab-trio">
-                <img src="img/trio.png" alt="" class="img-responsive">
-                <div class="ab-cirlce ab-cirle-blue">
-                    <i class="fa fa-code"></i>
-                    <strong>Clean Code</strong>
+            <form action="SearchTravel.aspx">
+                <div class="portlet box yellow">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="fa fa-search"></i>Søg
+                                <asp:Literal ID="searchTotal" runat="server"></asp:Literal>
+                        </div>
+                    </div>
+                    <div class="portlet-body" style="">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <label class="sr-only">Dato</label>
+                                <input type="text" class="form-control" id="date" name="date" placeholder="dd-mm-YYYY ex. 01-01-2015" runat="server">
+                            </div>
+                            <div class="col-md-5">
+                                <select data-container="body" class="bs-select form-control" name="routes" id="routes" runat="server" multiple="false"></select>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="submit" class="btn btn-default yellow">Søg rejse <i class="m-icon-swapright m-icon-white"></i></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="ab-cirlce ab-cirle-red">
-                    <i class="fa fa-gift"></i>
-                    <strong>Huge Updates</strong>
-                </div>
-                <div class="ab-cirlce ab-cirle-green">
-                    <i class="fa fa-mobile"></i>
-                    <strong>Responsive</strong>
-                </div>
-            </div>
+            </form>
+
         </div>
     </div>
     <!-- About block END -->
@@ -171,26 +209,34 @@ License: You must have a valid license purchased only from themeforest (the abov
                 <div class="col-md-3 col-sm-3 col-xs-12 item">
                     <i class="fa fa-heart"></i>
                     <h3>Fantastic Support</h3>
-                    <p>Lorem ipsum et dolor amet<br>
-                        consectetuer diam</p>
+                    <p>
+                        Lorem ipsum et dolor amet<br>
+                        consectetuer diam
+                    </p>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-12 item">
                     <i class="fa fa-mobile"></i>
                     <h3>Mobile Solutions</h3>
-                    <p>Lorem ipsum et dolor amet<br>
-                        consectetuer diam</p>
+                    <p>
+                        Lorem ipsum et dolor amet<br>
+                        consectetuer diam
+                    </p>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-12 item">
                     <i class="fa fa-signal"></i>
                     <h3>Market Analysis</h3>
-                    <p>Lorem ipsum et dolor amet<br>
-                        consectetuer diam</p>
+                    <p>
+                        Lorem ipsum et dolor amet<br>
+                        consectetuer diam
+                    </p>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-12 item">
                     <i class="fa fa-camera"></i>
                     <h3>Photography</h3>
-                    <p>Lorem ipsum et dolor amet<br>
-                        consectetuer diam</p>
+                    <p>
+                        Lorem ipsum et dolor amet<br>
+                        consectetuer diam
+                    </p>
                 </div>
             </div>
         </div>
@@ -204,7 +250,7 @@ License: You must have a valid license purchased only from themeforest (the abov
         </div>
     </div>
     <!-- Message block END -->
-  
+
 
     <!-- Choose us block BEGIN -->
     <div class="choose-us-block content text-center margin-bottom-40" id="benefits">
@@ -415,28 +461,28 @@ License: You must have a valid license purchased only from themeforest (the abov
         <div class="container">
             <h2>Customer <strong>login</strong></h2>
 
-        <form class="login-form" action="Index.aspx" method="post">
-        <div class="form-group">
-            <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
-            <label class="control-label visible-ie8 visible-ie9">Brugernavn</label>
-			<div class="input-icon">
-				<i class="fa fa-user"></i>
-				<input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Brugernavn" name="username"/>
-			</div>
-		</div>
-		<div class="form-group">
-			<label class="control-label visible-ie8 visible-ie9">Adgangskode</label>
-			<div class="input-icon">
-				<i class="fa fa-lock"></i>
-				<input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="Adgangskode" name="password"/>
-			</div>
-		</div>
-		<div class="form-actions">
-			<button id="submitButton" type="submit" class="btn blue pull-right" runat="server">
-			Login <i class="fa fa-arrow-circle-o-right"></i>
-			</button>
-		</div>
-	</form>
+            <form class="login-form" action="Index.aspx" method="post">
+                <div class="form-group">
+                    <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                    <label class="control-label visible-ie8 visible-ie9">Brugernavn</label>
+                    <div class="input-icon">
+                        <i class="fa fa-user"></i>
+                        <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Brugernavn" name="username" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label visible-ie8 visible-ie9">Adgangskode</label>
+                    <div class="input-icon">
+                        <i class="fa fa-lock"></i>
+                        <input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="Adgangskode" name="password" />
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button id="submitButton" type="submit" class="btn blue pull-right" runat="server">
+                        Login <i class="fa fa-arrow-circle-o-right"></i>
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
     <!-- LOGIN block END -->
@@ -454,6 +500,8 @@ License: You must have a valid license purchased only from themeforest (the abov
         </div>
     </div>
     <!-- END FOOTER -->
+
+    <% } %>
 
     <a href="#promo-block" class="go2top scroll"><i class="fa fa-arrow-up"></i></a>
 

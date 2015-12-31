@@ -61,7 +61,11 @@ namespace FerrySystem
 
         private void delete(int reservationId)
         {
-            manager.CancelCustomerReservation(reservationId);
+            Boolean status = manager.CancelCustomerReservation(reservationId);
+            if (!status)
+            {
+                Response.Redirect("index.aspx?command=exception&errorMsg=" + "Reservation kunne ikke slettes.", true);
+            }
         }
     }
 

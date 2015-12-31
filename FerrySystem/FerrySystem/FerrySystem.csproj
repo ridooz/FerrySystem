@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CreateCustomer.aspx" />
     <Content Include="CustomerPage.aspx" />
     <Content Include="img\logo\ferry_icon.svg" />
     <Content Include="img\logo\Ferry_logo.png" />
@@ -3652,10 +3653,18 @@
     <Content Include="scripts\layout.js" />
     <Content Include="scripts\metronic.js" />
     <Content Include="scripts\revo-ini.js" />
+    <Content Include="SearchTravel.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BridgeFactory.cs" />
+    <Compile Include="CreateCustomer.aspx.cs">
+      <DependentUpon>CreateCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateCustomer.aspx.designer.cs">
+      <DependentUpon>CreateCustomer.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CustomerPage.aspx.cs">
       <DependentUpon>CustomerPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3671,6 +3680,13 @@
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchTravel.aspx.cs">
+      <DependentUpon>SearchTravel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchTravel.aspx.designer.cs">
+      <DependentUpon>SearchTravel.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="plugins\jquery-file-upload\server\php\files\thumbnail\" />

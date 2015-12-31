@@ -22,5 +22,7 @@ namespace Contract.contract
          Customer GetCustomerByLogin(string username, string password);
          Reservation CreateCustomerReservation(Trip trip, Customer customer, double totalPrice, int numberOfPeople, Vehicle vehicle);
          bool CancelCustomerReservation(int reservationId);
+         List<Route> GetAllRoutes();
+         List<Vehicle> GetAllVehicles();
     }
 }

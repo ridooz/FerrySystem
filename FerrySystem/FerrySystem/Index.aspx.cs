@@ -28,6 +28,18 @@ namespace FerrySystem
                 }
 
             }
+            this.FillRouteDD();
+        }
+
+        private void FillRouteDD()
+        {
+            foreach (Route route in manager.GetAllRoutes())
+            {
+                ListItem item = new ListItem();
+                item.Text = route.Destination;
+                item.Value = route.RouteId + "";
+                routes.Items.Add(item);
+            }
         }
     }
 }
