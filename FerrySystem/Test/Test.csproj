@@ -54,6 +54,16 @@
     <Compile Include="InterfaceTest\CustomerInterfaceTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Contract\Contract.csproj">
+      <Project>{52a7463c-ae03-458a-96f4-c159aaebf645}</Project>
+      <Name>Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DummyBackend\DummyBackend.csproj">
+      <Project>{e70cb744-de73-4658-9465-57c205e1f27a}</Project>
+      <Name>DummyBackend</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
