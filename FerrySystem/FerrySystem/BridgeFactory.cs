@@ -11,7 +11,7 @@ namespace FerrySystem
     public class BridgeFactory
     {
         private static BridgeFactory instance = null; // lazy singleton
-        private CustomerContract manager;
+        private CustomerContract manager; //defining Contractinterface
 
         private BridgeFactory() // det er her switchen sker mellem dummy backend og den rigtige backend. 
         {
